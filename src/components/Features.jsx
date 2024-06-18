@@ -1,8 +1,8 @@
 import SecondaryButton from './SecondaryButton'; // Ensure this import is correct
 
-import lessonsImage from '../../public/assets/lessons.avif';
-import eventsImage from '../../public/assets/barCounseling.avif';
-import homeBarmanImage from '../../public/assets/homeBarman.avif';
+import lessonsImage from '/assets/lessons.avif';
+import eventsImage from '/assets/barCounseling.avif';
+import homeBarmanImage from '/assets/homeBarman.avif';
 
 const ServiceCard = ({ service, buttonText }) => {
   return (

@@ -3,13 +3,13 @@ import  { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import CocktailCard from './CocktailCard'; // Adjust the import path as necessary
-import mojitoImage from '../../public/assets/mojito.avif';
-import margaritaImage from '../../public/assets/margarita.avif';
-import oldFashionedImage from '../../public/assets/oldfashioned.jpg';
-import pinaColadaImage from '../../public/assets/pinacolada.avif';
-import martiniImage from '../../public/assets/martini.avif';
-import cosmopolitanImage from '../../public/assets/cosmopolitan.avif';
-import bloodyMaryImage from '../../public/assets/bloodymary.avif';
+import mojitoImage from '/assets/mojito.avif';
+import margaritaImage from '/assets/margarita.avif';
+import oldFashionedImage from '/assets/oldfashioned.jpg';
+import pinaColadaImage from '/assets/pinacolada.avif';
+import martiniImage from '/assets/martini.avif';
+import cosmopolitanImage from '/assets/cosmopolitan.avif';
+import bloodyMaryImage from '/assets/bloodymary.avif';
 
 const cocktails = [
   { 
