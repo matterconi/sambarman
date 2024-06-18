@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <div className="relative h-[30rem] sm:h-[36rem] md:h-[42rem] lg:h-[48rem] xl:h-[700px] mx-4 sm:mx-8 lg:mx-16 xl:mx-20 2xl:h-[1000px] my-8">
       <img 
-        src="/src/assets/hero.avif" 
+        src="../../public/assets/hero.avif" 
         alt="Hero background" 
         className="absolute inset-0 w-full h-full object-cover rounded-lg"
       />
