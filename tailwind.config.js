@@ -17,9 +17,32 @@ export default {
         cocktail: ['Pacifico', 'cursive'],
       },
       boxShadow: {
-        'custom-lg':'rgba(0, 0, 0, 0.24) 0px 30px 8px',
+        'custom-lg': 'rgba(0, 0, 0, 0.24) 0px 30px 8px',
+      },
+      keyframes: {
+        scrollLeft: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(-50% - 1rem))' }, // Adjust based on margin/padding
+        },
+        scrollRight: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(50% - 1rem))' }, // Adjust based on margin/padding
+        },
+      },
+      animation: {
+        scrollLeft: 'scrollLeft linear infinite',
+        scrollRight: 'scrollRight linear infinite 5s',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.mask-gradient': {
+          '-webkit-mask-image': 'linear-gradient(to right, transparent, white 20%, white 80%, transparent)',
+          'mask-image': 'linear-gradient(to right, transparent, white 20%, white 80%, transparent)',
+        },
+      });
+    },
+  ],
 }

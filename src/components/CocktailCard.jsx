@@ -11,7 +11,7 @@ const CocktailCard = ({ cocktail }) => {
         </div>
       </div>
       <div className="absolute bottom-12 w-full flex justify-center">
-        <SecondaryButton to={`/cocktail/${cocktail.name}`}>Ricetta completa</SecondaryButton>
+        <SecondaryButton to={`/cocktail/${cocktail.name}`} color='bg-sunset' >Ricetta completa</SecondaryButton>
       </div>
     </div>
   );
