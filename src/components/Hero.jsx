@@ -2,7 +2,7 @@ import React from 'react';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faCocktail } from '@fortawesome/free-solid-svg-icons';
 import Button from './Button';
-import heroImage from './assets/hero.avif'; // Correctly import the hero image
+import heroImage from '/assets/hero.avif'; // Correctly import the hero image
 
 const Hero = () => {
   const handleCTAClick = () => {
