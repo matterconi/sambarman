@@ -4,6 +4,7 @@ const SecondaryButton = ({ to, children, color }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
+    window.scrollTo(0, 0);
     navigate(to);
   };
 
@@ -22,3 +23,4 @@ const SecondaryButton = ({ to, children, color }) => {
 };
 
 export default SecondaryButton;
+

@@ -1,10 +1,19 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleLogoClick = () => {
+    navigate('/');
+    if (isOpen) {
+      setIsOpen(false);
+    }
   };
 
   useEffect(() => {
@@ -18,7 +27,12 @@ const Navbar = () => {
   return (
     <nav className="bg-seaBlue p-6 text-white relative z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <a href="#" className="text-3xl font-cocktail text-sand">Sam, Barman</a>
+        <button
+          onClick={handleLogoClick}
+          className="text-3xl font-cocktail text-sand focus:outline-none"
+        >
+          Sam, Barman
+        </button>
         <div className="md:hidden z-50">
           <button
             onClick={toggleMenu}
