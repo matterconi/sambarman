@@ -1,6 +1,5 @@
 import mojitoImage from '/assets/mojito.avif';
 import margaritaImage from '/assets/margarita.avif';
-import oldFashionedImage from '/assets/oldFashioned.jpg';
 import pinaColadaImage from '/assets/pinaColada.avif';
 import martiniImage from '/assets/martini.avif';
 import cosmopolitanImage from '/assets/cosmopolitan.avif';
@@ -436,21 +435,7 @@ const cocktails = [
       method: 'Inumidire il bordo del bicchiere con succo di lime e immergerlo nel sale. Riempire il bicchiere con ghiaccio, aggiungere tequila, succo di lime e soda al pompelmo. Mescolare delicatamente e guarnire con una fetta di lime.'
     }
   },
-  {
-    name: 'Old Fashioned',
-    image: oldFashionedImage,
-    description: 'Un classico cocktail con whisky, angostura, zucchero e una scorza di agrumi.',
-    ingredients: ['whisky', 'angostura', 'zucchero', 'scorza di agrumi'],
-    recipe: {
-      ingredients: [
-        '60ml whisky',
-        '2 gocce di angostura',
-        '1 zolletta di zucchero',
-        'Scorza di arancia o limone'
-      ],
-      method: 'In un bicchiere, bagnare la zolletta di zucchero con le gocce di angostura. Schiacciare la zolletta, aggiungere ghiaccio e versare il whisky. Mescolare e guarnire con una scorza di agrumi.'
-    }
-  },
+ 
   {
     name: 'Whiskey Sour',
     image: whiskeySourImage,
