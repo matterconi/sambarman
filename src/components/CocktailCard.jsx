@@ -7,7 +7,7 @@ const CocktailCard = ({ cocktail }) => {
       <div className="my-8 px-4">
         <div className="mx-4 mb-4">
           <h3 className="text-xl font-semibold mb-2 text-center">{cocktail.name}</h3>
-          <p className="text-gray-700 text-center">{cocktail.description}</p>
+          <p className="text-lg text-gray-700 text-center">{cocktail.description}</p>
         </div>
       </div>
       <div className="absolute bottom-12 w-full flex justify-center">

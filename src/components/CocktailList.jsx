@@ -25,7 +25,7 @@ const CocktailList = () => {
                   640: {
                       slidesPerView: 2,
                   },
-                  768: {
+                  1000: {
                       slidesPerView: 3,
                   },
                   1200: {

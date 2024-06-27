@@ -46,11 +46,6 @@ const cocktails = [
       method: 'Shakerare il gin, il succo di limone e lo sciroppo di zucchero con ghiaccio. Filtrare in un bicchiere e aggiungere soda.'
     }
   },
-  { 
-    name: 'Bloody Mary', 
-    image: bloodyMaryImage, 
-    description: 'Un cocktail audace e saporito, con vodka, succo di pomodoro e spezie, guarnito con sedano e una fetta di limone.' 
-  },
   {
     name: 'Moscow Mule',
     image: moscowMuleImage, // Placeholder image reference

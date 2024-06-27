@@ -4,7 +4,6 @@ import cocktails from '../utils/cocktails'; // Adjust the path according to your
 import CocktailDetailCard from './CocktailDetailCard'; // Adjust the path according to your project structure
 
 const CocktailPage = () => {
-  console.log(cocktails)
   const { cocktailName } = useParams();
 
   if (!cocktailName) {
@@ -24,8 +23,8 @@ const CocktailPage = () => {
         name={cocktail.name}
         image={cocktail.image}
         description={cocktail.description}
-        ingredients={cocktail.ingredients}
-        recipe={cocktail.recipe}
+        ingredienti={cocktail.recipe.ingredients}
+        ricetta={cocktail.recipe}
       />
     </div>
   );
