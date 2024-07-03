@@ -5,6 +5,7 @@ import Ingredients from './Ingredients';
 import Categories from './Categories';
 import ContactForm from './ContactForm';
 import SocialMedia from './SocialMedia';
+import CustomScrollComponent from './CustomScrollComponent';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Features />
       <SocialMedia />
       <ContactForm />
+      <CustomScrollComponent />
     </div>
   );
 };

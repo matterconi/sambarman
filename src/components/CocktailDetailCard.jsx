@@ -1,6 +1,3 @@
-import React from 'react';
-import CocktailList from './CocktailList';
-
 const CocktailDetailCard = ({ name, image, description, ingredienti, ricetta }) => {
   return (
     <>
@@ -15,7 +12,7 @@ const CocktailDetailCard = ({ name, image, description, ingredienti, ricetta }) 
                 <img src={image} alt={name} className="object-cover h-full w-full" />
               </div>
             </div>
-            <div className="lg:w-1/2 p-4 lg:p-8">
+            <div className="lg:w-1/2 p-4 lg:p-8 px-8">
               {ricetta && (
                 <>
                   <h3 className="text-xl font-semibold text-gray-800 mt-4 lg:mt-0">Ingredienti</h3>
@@ -25,15 +22,12 @@ const CocktailDetailCard = ({ name, image, description, ingredienti, ricetta }) 
                     ))}
                   </ul>
                   <h3 className="text-xl font-semibold text-gray-800 mt-4">Ricetta</h3>
-                  <p className="text-lg text-gray-700 mt-2">{ricetta.method}</p>
+                  <p className="text-lg text-gray-700 mt-2 pb-6">{ricetta.method}</p>
                 </>
               )}
             </div>
           </div>
         </div>
-      </div>
-      <div className='w-full'>
-        <CocktailList />
       </div>
     </>
   );

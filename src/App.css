@@ -1,17 +1,42 @@
-/* CSS Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+/* App.css */
+
+/* Custom styles for Swiper navigation buttons */
+.custom-swiper .swiper-button-next,
+.custom-swiper .swiper-button-prev {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff; /* White color for the arrows */
+    width: 44px; /* Custom width */
+    height: 44px; /* Custom height */
+    border-radius: 50%; /* Make buttons circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
 }
 
-html, body {
-  height: 100%;
-  background-color: #264653; /* seaBlue */
+.custom-swiper .swiper-button-next:hover,
+.custom-swiper .swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.custom-swiper .swiper-button-next::after,
+.custom-swiper .swiper-button-prev::after {
+    font-size: 20px; /* Custom size for the arrow icons */
 }
+
+/* App.css */
+
+/* Apply grab and grabbing cursor styles */
+.cocktail-card {
+  cursor: grab;
+}
+
+.cocktail-card:active {
+  cursor: grabbing;
+}
+
+
+
+
+

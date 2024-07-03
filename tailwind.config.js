@@ -42,7 +42,10 @@ export default {
           '-webkit-mask-image': 'linear-gradient(to right, transparent, white 20%, white 80%, transparent)',
           'mask-image': 'linear-gradient(to right, transparent, white 20%, white 80%, transparent)',
         },
-      });
+        '.hover-stop-animation': {
+          animation: 'none !important',
+        },
+      }, ['responsive', 'hover']);
     },
   ],
 }

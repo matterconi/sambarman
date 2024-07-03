@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import cocktails from '../utils/cocktails'; // Adjust the path according to your project structure
 import CocktailDetailCard from './CocktailDetailCard'; // Adjust the path according to your project structure
+import CocktailList from './CocktailList';
 
 const CocktailPage = () => {
   const { cocktailName } = useParams();
@@ -18,7 +19,7 @@ const CocktailPage = () => {
   }
 
   return (
-    <div className="flex justify-center items-center flex-col p-6">
+    <div className="flex justify-center items-center flex-col">
       <CocktailDetailCard
         name={cocktail.name}
         image={cocktail.image}
@@ -26,6 +27,12 @@ const CocktailPage = () => {
         ingredienti={cocktail.recipe.ingredients}
         ricetta={cocktail.recipe}
       />
+      <div className="w-full">
+        <CocktailList 
+          cocktailName={cocktailName}
+          title={"Discover More"}
+        />
+      </div>
     </div>
   );
 };
