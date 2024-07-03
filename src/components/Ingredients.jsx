@@ -10,6 +10,7 @@ const Ingredients = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
+  const [startTouchX, setStartTouchX] = useState(0);
 
   useEffect(() => {
     const adjustListWidth = () => {
@@ -70,6 +71,24 @@ const Ingredients = () => {
     containerRef.current.scrollLeft = scrollLeft - walk;
   };
 
+  const handleTouchStart = (e) => {
+    setStartTouchX(e.touches[0].pageX - containerRef.current.offsetLeft);
+    setScrollLeft(containerRef.current.scrollLeft);
+    setIsDragging(true);
+  };
+
+  const handleTouchEnd = () => {
+    setIsDragging(false);
+  };
+
+  const handleTouchMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - containerRef.current.offsetLeft;
+    const walk = (x - startTouchX); // scroll-fast
+    containerRef.current.scrollLeft = scrollLeft - walk;
+  };
+
   useEffect(() => {
     const container = containerRef.current;
     if (container) {
@@ -95,6 +114,9 @@ const Ingredients = () => {
         onMouseLeave={handleMouseLeave}
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+        onTouchMove={handleTouchMove}
       >
         <ul
           ref={listRef}
