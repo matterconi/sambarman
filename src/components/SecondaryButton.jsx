@@ -4,8 +4,15 @@ const SecondaryButton = ({ to, children, color }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    window.scrollTo(0, 0);
-    navigate(to);
+    if (to.startsWith('#')) {
+      const element = document.querySelector(to);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.scrollTo(0, 0);
+      navigate(to);
+    }
   };
 
   return (
@@ -23,4 +30,3 @@ const SecondaryButton = ({ to, children, color }) => {
 };
 
 export default SecondaryButton;
-

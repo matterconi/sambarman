@@ -129,8 +129,8 @@ const Ingredients = () => {
         >
           {displayedIngredients.map((liquor, index) => (
             <li key={index} className="whitespace-nowrap">
-              <SecondaryButton to={`/cocktails/${liquor}`} color="bg-terracotta">
-                {capitalizeFirstLetter(liquor)}
+              <SecondaryButton to={`/ingredient/${liquor.name}`} color="bg-terracotta">
+                {capitalizeFirstLetter(liquor.name)}
               </SecondaryButton>
             </li>
           ))}

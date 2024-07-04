@@ -14,8 +14,11 @@ const ServiceCard = ({ service, buttonText }) => {
           <p className="text-seaBlue mx-8 text-justify">{service.description}</p>
         </div>
       </div>
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center mb-4">
         <SecondaryButton onClick={service.onClick}>{buttonText}</SecondaryButton>
+      </div>
+      <div className="w-full flex justify-center">
+        <SecondaryButton to="#contact" color="bg-terracotta">Contattami</SecondaryButton>
       </div>
       <div className='p-4'></div>
     </div>

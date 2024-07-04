@@ -5,7 +5,7 @@ import martiniImage from '/assets/martini.avif';
 import cosmopolitanImage from '/assets/cosmopolitan.avif';
 import bloodyMaryImage from '/assets/bloodyMary.avif';
 import ginFizzImage from '/assets/ginFizz.avif';
-import moscowMuleImage from '/assets/moscowMule.jpg'
+import moscowMuleImage from '/assets/moscowMule.jpg';
 import cubaLibreImage from '/assets/cubaLibre.jpg';
 import tequilaSunriseImage from '/assets/tequilaSunrise.jpg';
 import longIslandImage from '/assets/longIsland.jpg';
@@ -33,7 +33,7 @@ import darkNStormyImage from '/assets/darkNStormy.jpg';
 const cocktails = [
   {
     name: 'Gin Fizz',
-    image: ginFizzImage, // Placeholder image reference
+    image: ginFizzImage,
     description: 'Un cocktail rinfrescante con gin, succo di limone, zucchero e acqua frizzante, perfetto per l\'estate.',
     ingredients: ['gin', 'succo di limone', 'zucchero', 'acqua frizzante'],
     recipe: {
@@ -44,11 +44,12 @@ const cocktails = [
         'Soda'
       ],
       method: 'Shakerare il gin, il succo di limone e lo sciroppo di zucchero con ghiaccio. Filtrare in un bicchiere e aggiungere soda.'
-    }
+    },
+    category: 'classici'
   },
   {
     name: 'Moscow Mule',
-    image: moscowMuleImage, // Placeholder image reference
+    image: moscowMuleImage,
     description: 'Un classico cocktail con vodka, birra allo zenzero e succo di lime, servito in una tazza di rame.',
     ingredients: ['vodka', 'birra allo zenzero', 'succo di lime'],
     recipe: {
@@ -59,7 +60,8 @@ const cocktails = [
         'Fetta di lime'
       ],
       method: 'Riempire una tazza di rame con ghiaccio. Aggiungere vodka e succo di lime. Completare con birra allo zenzero e guarnire con una fetta di lime.'
-    }
+    },
+    category: 'classici'
   },
   {
     name: 'Cuba Libre',
@@ -74,7 +76,8 @@ const cocktails = [
         'Fetta di lime'
       ],
       method: 'Riempire un bicchiere con ghiaccio. Aggiungere rum e succo di lime. Completare con cola e guarnire con una fetta di lime.'
-    }
+    },
+    category: 'classici'
   },
   {
     name: 'Tequila Sunrise',
@@ -88,7 +91,8 @@ const cocktails = [
         '15ml granatina'
       ],
       method: 'Riempire un bicchiere con ghiaccio. Aggiungere tequila e succo d\'arancia. Versare lentamente la granatina e lasciare che si depositi sul fondo del bicchiere.'
-    }
+    },
+    category: 'tropicali'
   },
   {
     name: 'Pina Colada',
@@ -104,7 +108,8 @@ const cocktails = [
         'Ciliegina'
       ],
       method: 'Shakerare il rum, il succo di ananas e la crema di cocco con ghiaccio. Filtrare in un bicchiere. Guarnire con una fetta di ananas e una ciliegina.'
-    }
+    },
+    category: 'tropicali'
   },
   {
     name: 'Long Island',
@@ -123,7 +128,8 @@ const cocktails = [
         'Fetta di limone'
       ],
       method: 'Riempire un bicchiere con ghiaccio. Aggiungere vodka, rum, tequila, gin, triple sec e succo di limone. Completare con Coca-Cola e guarnire con una fetta di limone.'
-    }
+    },
+    category: 'classici'
   },
   {
     name: 'Sex on the Beach',
@@ -139,7 +145,8 @@ const cocktails = [
         'Fetta d\'arancia'
       ],
       method: 'Riempire un bicchiere con ghiaccio. Aggiungere vodka, liquore alla pesca, succo di mirtillo e succo d\'arancia. Mescolare e guarnire con una fetta d\'arancia.'
-    }
+    },
+    category: 'tropicali'
   },
   {
     name: 'Negroni',
@@ -154,7 +161,8 @@ const cocktails = [
         'Scorza d\'arancia'
       ],
       method: 'Mescolare gin, Campari e vermouth dolce con ghiaccio in un bicchiere. Guarnire con una scorza d\'arancia.'
-    }
+    },
+    category: 'aperitivi'
   },
   {
     name: 'Negroni Sbagliato',
@@ -169,7 +177,8 @@ const cocktails = [
         'Scorza d\'arancia'
       ],
       method: 'Mescolare Campari e vermouth dolce in un bicchiere con ghiaccio. Completare con vino frizzante e guarnire con una scorza d\'arancia.'
-    }
+    },
+    category: 'aperitivi'
   },
   {
     name: 'Americano',
@@ -184,7 +193,8 @@ const cocktails = [
         'Scorza d\'arancia'
       ],
       method: 'Mescolare Campari e vermouth dolce in un bicchiere con ghiaccio. Completare con acqua frizzante e guarnire con una scorza d\'arancia.'
-    }
+    },
+    category: 'aperitivi'
   },
   {
     name: 'Garibaldi',
@@ -198,7 +208,8 @@ const cocktails = [
         'Fetta d\'arancia'
       ],
       method: 'Riempire un bicchiere con ghiaccio. Aggiungere Campari e succo d\'arancia. Mescolare e guarnire con una fetta d\'arancia.'
-    }
+    },
+    category: 'aperitivi'
   },
   {
     name: 'Mito',
@@ -210,7 +221,8 @@ const cocktails = [
         // Placeholder ingredients
       ],
       method: 'La ricetta del Mito non è specificata nel menu.'
-    }
+    },
+    category: 'vintage'
   },
   {
     name: 'Godfather',
@@ -223,7 +235,8 @@ const cocktails = [
         '30ml amaretto'
       ],
       method: 'Mescolare whisky e amaretto in un bicchiere con ghiaccio.'
-    }
+    },
+    category: 'after dinner'
   },
   {
     name: 'Godmother',
@@ -236,7 +249,8 @@ const cocktails = [
         '30ml amaretto'
       ],
       method: 'Mescolare vodka e amaretto in un bicchiere con ghiaccio.'
-    }
+    },
+    category: 'after dinner'
   },
   {
     name: 'Daiquiri',
@@ -250,7 +264,8 @@ const cocktails = [
         '15ml sciroppo semplice'
       ],
       method: 'Shakerare rum, succo di lime e sciroppo semplice con ghiaccio. Filtrare in un bicchiere da cocktail.'
-    }
+    },
+    category: 'classici'
   },
   {
     name: 'White Lady',
@@ -264,7 +279,8 @@ const cocktails = [
         '15ml succo di limone'
       ],
       method: 'Shakerare gin, triple sec e succo di limone con ghiaccio. Filtrare in un bicchiere da cocktail.'
-    }
+    },
+    category: 'classici'
   },
   {
     name: 'Kamikaze',
@@ -278,7 +294,8 @@ const cocktails = [
         '30ml succo di lime'
       ],
       method: 'Shakerare vodka, triple sec e succo di lime con ghiaccio. Filtrare in un bicchiere da cocktail.'
-    }
+    },
+    category: 'classici'
   },
   {
     name: 'Cosmopolitan',
@@ -293,7 +310,8 @@ const cocktails = [
         '15ml succo di lime'
       ],
       method: 'Shakerare vodka, triple sec, succo di mirtillo e succo di lime con ghiaccio. Filtrare in un bicchiere da cocktail.'
-    }
+    },
+    category: 'after dinner'
   },
   {
     name: 'Margarita',
@@ -308,7 +326,8 @@ const cocktails = [
         'Sale'
       ],
       method: 'Inumidire il bordo del bicchiere con succo di lime e immergerlo nel sale. Shakerare tequila, succo di lime e triple sec con ghiaccio. Filtrare nel bicchiere.'
-    }
+    },
+    category: 'classici'
   },
   {
     name: 'Espresso Martini',
@@ -322,12 +341,23 @@ const cocktails = [
         '30ml espresso'
       ],
       method: 'Shakerare vodka, liquore al caffè ed espresso con ghiaccio. Filtrare in un bicchiere da cocktail.'
-    }
+    },
+    category: 'after dinner'
   },
   { 
     name: 'Martini', 
     image: martiniImage, 
-    description: 'Un cocktail elegante e sofisticato, tipicamente preparato con gin o vodka e vermouth, guarnito con un\'oliva o una scorza di limone.' 
+    description: 'Un cocktail elegante e sofisticato, tipicamente preparato con gin o vodka e vermouth, guarnito con un\'oliva o una scorza di limone.',
+    ingredients: ['gin', 'vodka', 'vermouth'],
+    recipe: {
+      ingredients: [
+        '60ml gin',
+        '10ml vermouth',
+        'Oliva o scorza di limone'
+      ],
+      method: 'Mescolare gin e vermouth con ghiaccio in un bicchiere. Filtrare in un bicchiere da cocktail e guarnire con un\'oliva o una scorza di limone.'
+    },
+    category: 'classici'
   },
   {
     name: 'Manhattan',
@@ -341,7 +371,8 @@ const cocktails = [
         '2 gocce di angostura'
       ],
       method: 'Mescolare whisky, vermouth dolce e angostura con ghiaccio. Filtrare in un bicchiere da cocktail e guarnire con una ciliegia.'
-    }
+    },
+    category: 'vintage'
   },
   {
     name: 'Boulevardier',
@@ -355,7 +386,8 @@ const cocktails = [
         '30ml vermouth dolce'
       ],
       method: 'Mescolare whisky, Campari e vermouth dolce con ghiaccio. Filtrare in un bicchiere da cocktail e guarnire con una scorza d\'arancia.'
-    }
+    },
+    category: 'vintage'
   },
   {
     name: 'Mojito',
@@ -371,7 +403,8 @@ const cocktails = [
         'Acqua frizzante'
       ],
       method: 'Pestare la menta e il lime con lo zucchero in un bicchiere. Riempire con ghiaccio, aggiungere il rum e completare con acqua frizzante. Mescolare delicatamente e guarnire con una foglia di menta.'
-    }
+    },
+    category: 'pestati'
   },
   {
     name: 'Caipiroska',
@@ -385,7 +418,8 @@ const cocktails = [
         '2 cucchiaini di zucchero'
       ],
       method: 'Pestare il lime con lo zucchero in un bicchiere. Riempire con ghiaccio, aggiungere la vodka e mescolare.'
-    }
+    },
+    category: 'pestati'
   },
   {
     name: 'Caipirinha',
@@ -399,7 +433,8 @@ const cocktails = [
         '2 cucchiaini di zucchero'
       ],
       method: 'Pestare il lime con lo zucchero in un bicchiere. Riempire con ghiaccio, aggiungere la cachaça e mescolare.'
-    }
+    },
+    category: 'pestati'
   },
   {
     name: 'Rum Cooler',
@@ -412,7 +447,8 @@ const cocktails = [
         '120ml mixer a scelta (es. succo di frutta, soda, ginger ale)'
       ],
       method: 'Riempire un bicchiere con ghiaccio. Aggiungere il rum e completare con il mixer a scelta. Mescolare e guarnire con una fetta di lime o arancia.'
-    }
+    },
+    category: 'tropicali'
   },
   {
     name: 'Paloma',
@@ -428,9 +464,9 @@ const cocktails = [
         'Fetta di lime'
       ],
       method: 'Inumidire il bordo del bicchiere con succo di lime e immergerlo nel sale. Riempire il bicchiere con ghiaccio, aggiungere tequila, succo di lime e soda al pompelmo. Mescolare delicatamente e guarnire con una fetta di lime.'
-    }
+    },
+    category: 'tropicali'
   },
- 
   {
     name: 'Whiskey Sour',
     image: whiskeySourImage,
@@ -443,7 +479,8 @@ const cocktails = [
         '15ml sciroppo semplice'
       ],
       method: 'Shakerare whisky, succo di limone e sciroppo semplice con ghiaccio. Filtrare in un bicchiere da cocktail e guarnire con una ciliegia e una fetta di limone.'
-    }
+    },
+    category: 'classici'
   },
   {
     name: 'Dark’n Stormy',
@@ -458,7 +495,8 @@ const cocktails = [
         'Fetta di lime'
       ],
       method: 'Riempire un bicchiere con ghiaccio. Aggiungere il rum scuro e completare con birra allo zenzero. Aggiungere il succo di lime e mescolare delicatamente. Guarnire con una fetta di lime.'
-    }
+    },
+    category: 'tropicali'
   }
 ];
 

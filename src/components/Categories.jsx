@@ -117,7 +117,7 @@ const Categories = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 mb-12">
       <h1 className="text-3xl font-bold font-cocktail text-center text-sand mb-12">Categories</h1>
       <div
         ref={containerRef}
@@ -142,8 +142,8 @@ const Categories = () => {
         >
           {displayedCategories.map((category, index) => (
             <li key={index} className="whitespace-nowrap">
-              <SecondaryButton to={`/cocktails/${category}`} color="bg-terracotta">
-                {capitalizeFirstLetter(category)}
+              <SecondaryButton to={`/categories/${category.name}`} color="bg-terracotta">
+                {capitalizeFirstLetter(category.name)}
               </SecondaryButton>
             </li>
           ))}

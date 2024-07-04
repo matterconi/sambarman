@@ -8,6 +8,8 @@ import SocialMedia from './components/SocialMedia';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CocktailPage from './components/CocktailPage';
+import IngredientPage from './components/IngredientPage'; // Import IngredientPage
+import CategoryPage from './components/CategoryPage'; // Import CategoryPage
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/cocktail/:cocktailName" element={<CocktailPage />} />
+          <Route path="/ingredient/:ingredientName" element={<IngredientPage />} /> {/* Add IngredientPage route */}
+          <Route path="/categories/:categoryName" element={<CategoryPage />} /> {/* Add CategoryPage route */}
         </Routes>
         <Footer />
       </div>

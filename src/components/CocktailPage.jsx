@@ -19,7 +19,7 @@ const CocktailPage = () => {
   }
 
   return (
-    <div className="flex justify-center items-center flex-col">
+    <div className="flex justify-center items-center flex-col my-8">
       <CocktailDetailCard
         name={cocktail.name}
         image={cocktail.image}
