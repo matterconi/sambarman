@@ -55,7 +55,7 @@ const Features = () => {
   return (
     <div className="py-12 bg-turquoise">
       <div className="container mx-auto px-6 text-center">
-        <div className="bg-white text-seaBlue text-center py-2 mb-8 rounded-lg">
+        <div className="bg-white text-seaBlue text-center py-3 mb-8 rounded-lg">
           <h1 className="font-cocktail text-4xl">Servizi Offerti</h1>
         </div>
         <Swiper

@@ -34,7 +34,7 @@ const CocktailList = ({ cocktailName, ingredient, category, title }) => {
   return (
     <div className="flex justify-center mx-4 sm:mx-8 lg:mx-16 xl:mx-20">
       <div className="container mb-4">
-        <div className="bg-sand text-white text-center py-2 mb-8 rounded-lg">
+        <div className="bg-sand text-white text-center py-3 mb-8 rounded-lg">
           <h1 className="font-cocktail text-4xl">{title || 'Cocktail'}</h1>
         </div>
         <Swiper

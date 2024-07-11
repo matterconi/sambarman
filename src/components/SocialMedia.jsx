@@ -27,7 +27,7 @@ const SocialMedia = () => {
   return (
     <div className="py-12 bg-white">
       <div className="container mx-auto px-6 text-center">
-        <div className="bg-terracotta text-white text-center py-2 mb-8 rounded-lg">
+        <div className="bg-terracotta text-white text-center py-3 mb-8 rounded-lg">
           <h2 className="text-3xl font-bold font-cocktail">Social</h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-start">
